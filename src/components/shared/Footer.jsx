@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <section>
             <footer>
-                <div className="footer p-10 lg:pl-20 bg-[#1A1919] text-white">
+                <div className="footer p-10 lg:pl-20 bg-[#2B3440] text-white">
                     <aside className="space-y-3 mx-auto w-auto">
                         <h3 className="text-3xl font-medium">ZenFitEscapes</h3>
                         <p className="text-left">At ZenFitEscapes, we are dedicated to providing <br /> rejuvenating Yoga and Fitness Retreats that <br />
@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="flex items-center p-4 pl-20 bg-[#1A1919] text-white justify-between">
+                <div className="flex items-center p-4 pl-20 bg-[#2B3440] text-white justify-between">
                     <p>Copyright © 2023 - All right reserved</p>
                     <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                         Developed by: <Link to='https://github.com/Shabnaz21'>Shabnaz</Link>

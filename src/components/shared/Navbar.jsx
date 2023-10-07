@@ -10,8 +10,8 @@ const Navbar = () => {
         <li><NavLink to='/register'>Register</NavLink> </li>
     </>
     return (
-        <div>
-            <div className="navbar bg-base-100 container mx-auto">
+        <div className="bg-[#E3F2F1] ">
+            <div className="navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -21,7 +21,7 @@ const Navbar = () => {
                             {menus}
                         </ul>
                     </div>
-                    <Link to='/'><h3 className="text-3xl font-medium">ZenFitEscapes</h3></Link>
+                    <Link to='/'><h3 className="text-3xl font-medium ">ZenFitEscapes</h3></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -29,7 +29,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/login' className="btn bg-[#ffcf3c] normal-case">Login</Link>
+                    <Link to='/login' className="btn bg-[#F1615A] text-white normal-case">Login</Link>
                 </div>
             </div>
         </div>
