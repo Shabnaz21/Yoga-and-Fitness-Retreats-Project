@@ -2,33 +2,16 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const menus = <>
-        <li><NavLink to='/'
-            className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#ffcf3c]" : ""
-        }>Home</NavLink> </li>
-        <li><NavLink to='/classes'
-            className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#ffcf3c]" : ""
-        }>Classes</NavLink> </li>
-        <li><NavLink to='/workshop'
-            className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#ffcf3c]" : ""
-        }>Workshop</NavLink> </li>
-        <li><NavLink to='/packages'
-            className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#ffcf3c]" : ""
-        }>Packages</NavLink> </li>
-        <li><NavLink to='/register'
-            className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#ffcf3c]" : ""
-        }>Register</NavLink> </li>
-        <li><NavLink to='/login'
-            className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-[#ffcf3c]" : ""
-        }>Login</NavLink> </li></>
+        <li><NavLink to='/'>Home</NavLink> </li>
+        <li><NavLink to='/services'>Services</NavLink> </li>
+        <li><NavLink to='/packages'>Pricing & Packages</NavLink> </li>
+        <li><NavLink to='/exclusive-offer'>Exclusive offer</NavLink> </li>
+        <li><NavLink to='/workshops'>Workshops</NavLink> </li>
+        <li><NavLink to='/register'>Register</NavLink> </li>
+    </>
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,7 +21,7 @@ const Navbar = () => {
                             {menus}
                         </ul>
                     </div>
-                    <Link to='/'><img src="https://i.ibb.co/Y293qPy/logo.png" width={'150px'} alt="" /></Link>
+                    <Link to='/'><h3 className="text-3xl font-medium">ZenFitEscapes</h3></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -46,7 +29,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to={'/login'} className="btn bg-[#ffcf3c] normal-case">Login</Link>
+                    <Link to='/login' className="btn bg-[#ffcf3c] normal-case">Login</Link>
                 </div>
             </div>
         </div>
