@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Yoga Bliss Retreat",
+        "image": "https://i.ibb.co/qrRNw3k/bamboo-yoga-play-studio-dominical-costa-rica.jpg",
+        "price": "1200",
+        "shortDescription": "A weeklong retreat aimed at rejuvenating your spirit through classic yoga techniques.",
+        "description": "Indulge in a transformative week of self-discovery and rejuvenation at our Yoga Bliss Retreat. Led by experienced yoga instructors, this retreat combines the ancient wisdom of yoga with modern practices to create a harmonious experience for body and mind. Our daily sessions include a blend of Hatha, Vinyasa, and Kundalini yoga, providing a holistic approach to physical and mental well-being. Join us in the lush surroundings of Costa Rica for a truly transformative journey.",
+        "benefits": [
+            "Enhanced flexibility and strength",
+            "Stress reduction and mental clarity",
+            "Improved posture and alignment",
+            "Inner peace and relaxation",
+            "Community and connection with like-minded individuals"
+        ],
+        "instructorName": "Samantha Smith",
+        "instructorExperience": "Certified yoga instructor with 10+ years of teaching experience",
+        "location": "Dominical, Costa Rica",
+        "duration": "7 days",
+        "buttonText": "Experience Bliss"
+    },
+    {
+        "id": 2,
+        "name": "Fitness Adventure Boot Camp",
+        "image": "https://i.ibb.co/WgJ1WXg/boot-camps-surrey-guildford-godalming.jpg",
+        "price": "1500",
+        "shortDescription": "Engage in exhilarating outdoor activities. Ideal for the adrenaline junkie in you.",
+        "description": "Join our Fitness Adventure Boot Camp for an action-packed experience that will challenge your limits. Led by expert trainers, this boot camp takes you on an adventure through the stunning landscapes of Surrey. From hiking and obstacle courses to high-intensity interval training, our program is designed to boost your fitness levels while enjoying the great outdoors. Get ready to push your boundaries and embark on a fitness journey like no other.",
+        "benefits": [
+            "Improved cardiovascular fitness",
+            "Strength and endurance gains",
+            "Enhanced teamwork and camaraderie",
+            "Adventurous spirit and confidence",
+            "A full-body workout in beautiful natural settings"
+        ],
+        "instructorName": "David Anderson",
+        "instructorExperience": "Certified fitness trainer and outdoor enthusiast",
+        "location": "Surrey, United Kingdom",
+        "duration": "5 days",
+        "buttonText": "Start Your Adventure"
+    },
+    {
+        "id": 3,
+        "name": "Meditation Haven",
+        "image": "https://i.ibb.co/L5PdYSq/image-from-rawpixel-id-1201640-jpeg-1080x675.jpg",
+        "price": "1100",
+        "shortDescription": "Escape the hustle. Focus on mindfulness in a tranquil setting.",
+        "description": "Discover inner peace and mindfulness at our Meditation Haven retreat. Set amidst serene surroundings, this retreat offers a sanctuary for those seeking solace from the demands of daily life. Our guided meditation sessions, led by experienced practitioners, will help you cultivate mindfulness and inner calm. Unplug from technology, reconnect with nature, and find the serenity you've been longing for.",
+        "benefits": [
+            "Stress reduction and relaxation",
+            "Enhanced mental clarity and focus",
+            "Emotional balance and well-being",
+            "Deeper connection with self and nature",
+            "Mindful living for a balanced life"
+        ],
+        "instructorName": "Sophia Johnson",
+        "instructorExperience": "Meditation and mindfulness instructor with 8 years of experience",
+        "location": "Tranquil Forest Retreat, California",
+        "duration": "6 days",
+        "buttonText": "Explore Now"
+    },
+    {
+        "id": 4,
+        "name": "Holistic Nutrition Workshop",
+        "image": "https://i.ibb.co/nbRwJT6/corporate-nutrition-workshops-melbourne-630.jpg",
+        "price": "300",
+        "shortDescription": "Learn to create balanced meals. A hands-on workshop for health enthusiasts.",
+        "description": "Join our Holistic Nutrition Workshop and embark on a journey to better health through mindful eating. Led by nutrition experts, this workshop will teach you the art of creating balanced and nourishing meals. You'll gain hands-on experience in meal planning, cooking, and understanding the nutritional value of foods. Take the first step towards a healthier lifestyle today.",
+        "benefits": [
+            "Nutritional knowledge and meal planning skills",
+            "Healthy cooking techniques",
+            "Weight management and improved digestion",
+            "Boosted energy levels",
+            "A supportive and informative environment"
+        ],
+        "instructorName": "Emily Turner",
+        "instructorExperience": "Certified nutritionist with 12 years of experience",
+        "location": "Melbourne, Australia",
+        "duration": "2 days",
+        "buttonText": "Book Now"
+    },
+    {
+        "id": 5,
+        "name": "Nature Immersion Experience",
+        "image": "https://i.ibb.co/HhSTmsc/Yoga-3-900-x-600.jpg",
+        "price": "1400",
+        "shortDescription": "Unplug and reconnect. Immerse yourself in the lap of nature.",
+        "description": "Experience the healing power of nature with our Nature Immersion Retreat. Located in the heart of a lush forest, this retreat offers a unique opportunity to disconnect from the digital world and reconnect with the natural world. Explore pristine trails, meditate by the river, and rejuvenate your spirit in a serene environment. It's time to embrace the tranquility of nature.",
+        "benefits": [
+            "Stress reduction and mental rejuvenation",
+            "Connection with nature and wildlife",
+            "Increased mindfulness and presence",
+            "Physical and mental well-being",
+            "Renewed sense of wonder and gratitude"
+        ],
+        "instructorName": "Daniel Green",
+        "instructorExperience": "Nature enthusiast and mindfulness practitioner",
+        "location": "Deep Forest Retreat, Oregon",
+        "duration": "4 days",
+        "buttonText": "Get Started"
+    },
+    {
+        "id": 6,
+        "name": "Well-being Seminars",
+        "image": "https://i.ibb.co/6HXfPgt/27503306-10154952313756862-1504000091080463655-o.jpg",
+        "price": "250",
+        "shortDescription": "Engage in dialogue. Multiple seminars on life balance, mental health, and well-being.",
+        "description": "Expand your horizons and prioritize your well-being with our series of engaging seminars. Led by expert speakers, these seminars cover a range of topics, from achieving work-life balance to managing stress and fostering mental health. Join us for insightful discussions and practical strategies to enhance your overall well-being.",
+        "benefits": [
+            "Practical strategies for life balance",
+            "Improved mental health and stress management",
+            "Personal growth and development",
+            "Supportive community and networking",
+            "Actionable takeaways for a healthier lifestyle"
+        ],
+        "instructorName": "Dr. Sarah Miller",
+        "instructorExperience": "Clinical psychologist and well-being expert",
+        "location": "Wellness Center, New York",
+        "duration": "2 days",
+        "buttonText": "Embrace Wellness"
+    },
+    {
+        "id": 7,
+        "name": "Couples Reconnect Retreat",
+        "image": "https://i.ibb.co/QfNq8JV/couple-yoga-jpg.webp",
+        "price": "1600",
+        "shortDescription": "Couples retreat fosters connection through tailored activities for deeper intimacy.",
+        "description": "Reignite the spark in your relationship with our Couples Reconnect Retreat. This retreat is specially designed for couples looking to strengthen their bond and enhance their communication. Through a combination of yoga, mindfulness practices, and interactive activities, you and your partner will embark on a journey of deeper connection and mutual understanding.",
+        "benefits": [
+            "Enhanced communication and emotional intimacy",
+            "Renewed connection and romance",
+            "Tools for resolving conflicts peacefully",
+            "Quality time for bonding and relaxation",
+            "A stronger and more resilient relationship"
+        ],
+        "instructorName": "Lisa and Mark Anderson",
+        "instructorExperience": "Certified couples therapists with 15 years of experience",
+        "location": "Romantic Getaway Resort, Bali",
+        "duration": "7 days",
+        "buttonText": "Rekindle Love"
+    },
+    {
+        "id": 8,
+        "name": "Sound Healing Sessions",
+        "image": "https://i.ibb.co/gV1L2tb/IMG-2514-scaled.jpg",
+        "price": "400",
+        "shortDescription": "Dive into serenity with Tibetan bowls and chimes, a restorative experience.",
+        "description": "Experience the healing power of sound with our Sound Healing Sessions. Led by experienced sound healers, these sessions use Tibetan singing bowls, crystal bowls, and chimes to create a sonic journey that promotes relaxation and rejuvenation. Immerse yourself in a world of soothing vibrations and find harmony within.",
+        "benefits": [
+            "Deep relaxation and stress relief",
+            "Enhanced meditation and mindfulness",
+            "Emotional release and healing",
+            "Balanced energy centers (chakras)",
+            "A sense of inner peace and tranquility"
+        ],
+        "instructorName": "Julia Mitchell",
+        "instructorExperience": "Certified sound healer and meditation guide",
+        "location": "Serenity Sound Studio, Sedona",
+        "duration": "1 hour session",
+        "buttonText":"Join the Journey"
+    },
+    {
+        "id": 9,
+        "name": "Detox and Revitalize",
+        "image": "https://i.ibb.co/Z67GghH/5-regional-wellness-retreats.jpg",
+        "price": "1300",
+        "shortDescription": "Reset your system. A program incorporating detoxifying diets and rejuvenating spa treatments.",
+        "description": "Embark on a journey of detoxification and rejuvenation with our Detox and Revitalize program. This comprehensive program combines detoxifying diets, spa treatments, and wellness activities to help you reset your system and revitalize your body and mind. Leave feeling refreshed, renewed, and ready to embrace a healthier lifestyle.",
+        "benefits": [
+            "Elimination of toxins from the body",
+            "Improved digestion and metabolism",
+            "Weight loss and increased energy",
+            "Enhanced skin health and radiance",
+            "Overall rejuvenation and well-being"
+        ],
+        "instructorName": "Dr. Rebecca Turner",
+        "instructorExperience": "Holistic wellness expert with 20 years of experience",
+        "location": "Revital Wellness Retreat, Arizona",
+        "duration": "10 days",
+        "buttonText": "Book Your Spot"
+    }
+]
