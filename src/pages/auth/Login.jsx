@@ -16,12 +16,17 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result);
-                toast.success('Congress, You\'r successfully Login!');
-            }).catch(error => {
-                console.log(error);
-                toast.warn('Please provide Valid Password');
+                toast.success('Congratulations, you are successfully logged in!');
             })
+            .catch(error => {
+                console.log(error.message);
 
+                if (error.code === 'auth/invalid-login-credentials') {
+                    toast.error('Please check email & password. Try again!.');
+                } else {
+                    toast.warn('An error occurred. Please try again later.');
+                }
+            });
     }
     return (
         <>

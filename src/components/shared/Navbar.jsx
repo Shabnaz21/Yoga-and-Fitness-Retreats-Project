@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext} from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Hooks/AuthProvide/AuthProvider";
 
@@ -38,14 +38,20 @@ const Navbar = () => {
                        {menus}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    {
-                        user ? 
+                <div className="navbar-end gap-4">
+                    {user ? (
+                        <>
+                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img width={50} height={50}  src={user.photoURL} alt={user.displayName} />
+                                </div>
+                            </label>
+                            <span className="text-gray-700">{user.displayName}</span>
                             <button onClick={handleSignOut} className="btn bg-[#F1615A] text-white normal-case">Sign Out</button>
-                        :
-                            <Link to='/login' className="btn bg-[#F1615A] text-white normal-case">Login</Link>
-                    }
-                    
+                        </>
+                    ) : (
+                        <Link to='/login' className="btn bg-[#F1615A] text-white normal-case">Login</Link>
+                    )}
                 </div>
             </div>
         </div>
