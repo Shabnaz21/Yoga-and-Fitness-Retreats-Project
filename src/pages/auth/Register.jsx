@@ -1,6 +1,29 @@
 import { Link } from "react-router-dom";
+import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../../Hooks/Firebase/firebase.config";
+import { useState } from "react";
 
 const Register = () => {
+    const auth = getAuth(app);
+    const googleProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
+    const [user, setUser] = useState(null);
+
+    const handleGoogleSignIn = () => {
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                const loggedInUser = result.user;
+                setUser(loggedInUser)
+        })
+    }
+    const handleGithubSignIn = () => {
+        signInWithPopup(auth, githubProvider)
+            .then(result => {
+                const loggedUser = result.user;
+                setUser(loggedUser);
+        })
+    }
+
     return (
         <>
             <div className="relative flex flex-col justify-center h-screen overflow-hidden">
@@ -11,31 +34,31 @@ const Register = () => {
                             <label className="label">
                                 <span className="text-base label-text">Name</span>
                             </label>
-                            <input type="text" placeholder="Name" className="w-full input input-bordered" />
+                            <input type="text" name='name' placeholder="Name" className="w-full input input-bordered" />
                         </div>
                         <div>
                             <label className="label">
                                 <span className="text-base label-text">Email</span>
                             </label>
-                            <input type="text" placeholder="Email Address" className="w-full input input-bordered" />
+                            <input type="text" name='email' placeholder="Email Address" className="w-full input input-bordered" required/>
+                        </div>
+                        <div>
+                            <label className="label">
+                                <span className="text-base label-text">Photo URL</span>
+                            </label>
+                            <input type="text" name='photo' placeholder="Enter Photo URL" className="w-full input input-bordered" />
                         </div>
                         <div>
                             <label className="label">
                                 <span className="text-base label-text">Password</span>
                             </label>
-                            <input type="password" placeholder="Enter Password" className="w-full input input-bordered" />
-                        </div>
-                        <div>
-                            <label className="label">
-                                <span className="text-base label-text">Confirm Password</span>
-                            </label>
-                            <input type="password" placeholder="Confirm Password" className="w-full input input-bordered" />
+                            <input type="password" name='password' placeholder="Password" className="w-full input input-bordered" required/>
                         </div>
                         <div>
                             <button className="btn btn-block">Sign Up</button>
                         </div>
-                        <span>Already have an account ?
-                            <Link to='/login' className="text-blue-600 hover:text-blue-800 hover:underline">Login</Link></span>
+                        <span>Already have an account?
+                            <Link to='/login' className="text-blue-600 ml-3 hover:text-blue-800 hover:underline">Login</Link></span>
                     </form>
                     <div className="flex items-center w-full my-4">
                         <hr className="w-full" />
@@ -43,7 +66,8 @@ const Register = () => {
                         <hr className="w-full" />
                     </div>
                     <div className="my-6 space-y-2">
-                        <button aria-label="Login with Google" type="button"
+                        <button onClick={handleGoogleSignIn}
+                            aria-label="Login with Google" type="button"
                             className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-gray-400">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-5 h-5 fill-current">
                                 <path
@@ -52,7 +76,8 @@ const Register = () => {
                             </svg>
                             <p>Login with Google</p>
                         </button>
-                        <button aria-label="Login with GitHub" role="button"
+                        <button onClick={handleGithubSignIn}
+                            aria-label="Login with GitHub" role="button"
                             className="flex items-center justify-center w-full p-2 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-gray-400">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-5 h-5 fill-current">
                                 <path
@@ -63,6 +88,7 @@ const Register = () => {
                         </button>
                     </div>
                 </div>
+                
             </div>
         </>
     );

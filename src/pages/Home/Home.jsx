@@ -16,7 +16,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div>
-                    <img className='mx-auto w-auto' src="https://i.ibb.co/cQS5Z5t/mt-2251-home-img2.png" alt="" />
+                    <img className='mx-auto p-8 w-auto' src="https://i.ibb.co/cQS5Z5t/mt-2251-home-img2.png" alt="" />
                 </div>
             </div>
             {/* service */}
