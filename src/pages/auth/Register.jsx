@@ -1,27 +1,47 @@
 import { Link } from "react-router-dom";
-import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-import app from "../../Hooks/Firebase/firebase.config";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Hooks/AuthProvide/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
-    const auth = getAuth(app);
-    const googleProvider = new GoogleAuthProvider();
-    const githubProvider = new GithubAuthProvider();
-    const [user, setUser] = useState(null);
+    const { createUser, handleGoogleSignIn, handleGithubSignIn } = useContext(AuthContext);
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState('');
 
-    const handleGoogleSignIn = () => {
-        signInWithPopup(auth, googleProvider)
+    const handleRegister = event => { 
+        event.preventDefault();
+        const form = new FormData(event.currentTarget);
+        const name = form.get('name');
+        const photo = form.get('photo');
+        const email = form.get('email');
+        const password = form.get('password');
+
+        // Create User
+        createUser(email, password, name, photo)
             .then(result => {
-                const loggedInUser = result.user;
-                setUser(loggedInUser)
-        })
-    }
-    const handleGithubSignIn = () => {
-        signInWithPopup(auth, githubProvider)
-            .then(result => {
-                const loggedUser = result.user;
-                setUser(loggedUser);
-        })
+                console.log(result.user);   
+            })   
+            .catch(error => {
+            console.log(error.message);
+            })
+        
+        // Password condition
+        if (password.length < 6) {
+            setError('Password should be at least 6 characters');
+            return;
+        } else if (!/[A-Z]/.test(password)) {
+            setError('Must be at least one character need capital letter');
+            return;
+        } else if (!/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)) {
+            setError('Password cannot contain special characters');
+            return;
+        } else {
+            setError('');
+        }
+        toast.success('Registration successful!')
+        
+        setSuccess('');
     }
 
     return (
@@ -29,7 +49,7 @@ const Register = () => {
             <div className="relative flex flex-col justify-center h-screen overflow-hidden">
                 <div className="w-full p-6 m-auto bg-white rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-xl">
                     <h1 className="text-3xl font-semibold text-center text-gray-700">ZenFitEscapes</h1>
-                    <form className="space-y-4">
+                    <form onSubmit={handleRegister} className="space-y-4">
                         <div>
                             <label className="label">
                                 <span className="text-base label-text">Name</span>
@@ -56,10 +76,13 @@ const Register = () => {
                         </div>
                         <div>
                             <button className="btn btn-block">Sign Up</button>
+                            
                         </div>
                         <span>Already have an account?
                             <Link to='/login' className="text-blue-600 ml-3 hover:text-blue-800 hover:underline">Login</Link></span>
                     </form>
+                    {error && <p className="text-red-700">{error}</p>}
+                    {success && <p className="text-green-700">{success}</p>}
                     <div className="flex items-center w-full my-4">
                         <hr className="w-full" />
                         <p className="px-3 ">OR</p>
@@ -88,8 +111,8 @@ const Register = () => {
                         </button>
                     </div>
                 </div>
-                
             </div>
+            <ToastContainer />
         </>
     );
 };
