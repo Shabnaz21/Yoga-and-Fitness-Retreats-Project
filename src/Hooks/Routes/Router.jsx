@@ -8,7 +8,7 @@ import ServicesDetails from "../../pages/ServicesDetails/ServicesDetails";
 import ServiceList from "../../pages/Home/ServiceList";
 import PrivateRoutes from "./PrivateRoutes";
 import Package from "../../pages/Package/Package";
-import Offers from "../../pages/Package/Offers";
+import Offers from "../../pages/offer/Offers";
 
 
 

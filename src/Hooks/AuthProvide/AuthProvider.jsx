@@ -54,7 +54,7 @@ const AuthProvider = ({ children }) => {
         return signOut(auth);
     }
 
-    // restpass
+    // rest password
     const resetPassword = (email) => {
         setLoading(true);
         return sendPasswordResetEmail(auth, email)
