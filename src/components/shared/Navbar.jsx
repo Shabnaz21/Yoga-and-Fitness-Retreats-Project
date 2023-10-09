@@ -14,7 +14,7 @@ const Navbar = () => {
     const menus = <>
         <li><NavLink to='/'>Home</NavLink> </li>
         <li><NavLink to='/services'>Services</NavLink> </li>
-        <li><NavLink to='/packages'>Pricing & Packages</NavLink> </li>
+        <li><NavLink to='/packages'>Packages</NavLink> </li>
         <li><NavLink to='/exclusive-offer'>Exclusive offer</NavLink> </li>
         <li><NavLink to='/workshops'>Workshops</NavLink> </li>
         <li><NavLink to='/register'>Register</NavLink> </li>
@@ -47,10 +47,10 @@ const Navbar = () => {
                                 </div>
                             </label>
                             <span className="text-gray-700">{user.displayName}</span>
-                            <button onClick={handleSignOut} className="btn bg-[#F1615A] text-white normal-case">Sign Out</button>
+                            <button onClick={handleSignOut} className="btn bg-[#F1615A] hover:bg-slate-800 hover:text-white text-white normal-case">Sign Out</button>
                         </>
                     ) : (
-                        <Link to='/login' className="btn bg-[#F1615A] text-white normal-case">Login</Link>
+                            <Link to='/login' className="btn bg-[#F1615A] text-white  hover:bg-slate-800 hover:text-white normal-case">Login</Link>
                     )}
                 </div>
             </div>

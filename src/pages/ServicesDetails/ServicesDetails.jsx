@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 
 const ServicesDetails = () => {
     const allService = useLoaderData();
+    console.log(allService);
     const { id } = useParams();
     const idInt = parseInt(id);
     const service = allService.find(service => service.id === idInt)
@@ -49,7 +50,7 @@ const ServicesDetails = () => {
                         </div>
                     </div>
                     <button 
-                        className="btn bg-[#F1615A] p-3 text-white w-full hover:text-black
+                        className="btn bg-[#F1615A] p-3 text-white w-full hover:bg-slate-800 hover:text-white
                         font-semibold rounded-lg">{service.buttonText} </button>
                 </div>
             </div>

@@ -74,7 +74,7 @@ const Register = () => {
                             <input type="password" name='password' placeholder="Password" className="w-full input input-bordered" required/>
                         </div>
                         <div>
-                            <button className="btn btn-block">Sign Up</button>
+                            <button className="btn btn-block hover:bg-slate-800 hover:text-white">Sign Up</button>
                             
                         </div>
                         <span>Already have an account?

@@ -7,6 +7,7 @@ import Login from "../../pages/auth/Login";
 import ServicesDetails from "../../pages/ServicesDetails/ServicesDetails";
 import ServiceList from "../../pages/Home/ServiceList";
 import PrivateRoutes from "./PrivateRoutes";
+import Package from "../../pages/Package/Package";
 
 
 
@@ -29,6 +30,12 @@ const routes = createBrowserRouter([
                     <ServicesDetails></ServicesDetails>
                 </PrivateRoutes>,
                 loader:()=>fetch('/public/services.json')
+            },
+            {
+                path: '/packages',
+                element: <PrivateRoutes>
+                    <Package></Package>
+                </PrivateRoutes>
             },
             {
                 path: '/register',

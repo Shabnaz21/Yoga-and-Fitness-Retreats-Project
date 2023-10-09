@@ -21,7 +21,7 @@ const Banner = () => {
                     <div className='mt-20'>
                         <h1 className="mb-5 text-5xl font-bold">Elevate Your Spirit, Energize Your Body</h1>
                         <p className="mb-5"> Get Tranquil Yoga & Dynamic Fitness Retreats with Us.</p>
-                        <Link to='/register'><button className="btn bg-[#F1615A] hover:text-black text-white border-0">Get Started</button></Link>
+                        <Link to='/register'><button className="btn bg-[#F1615A] hover:bg-slate-800 hover:text-white text-white border-0">Get Started</button></Link>
                     </div>
                     <div className='mx-auto w-auto container hidden md:block'>
                         <Swiper

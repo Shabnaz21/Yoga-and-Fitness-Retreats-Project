@@ -19,7 +19,7 @@ const ServiceCard = ({ service }) => {
                         </div>
                         <div>
                             <Link to={`/services/${id}`}><button
-                                className="btn bg-[#F1615A] text-white items-center normal-case">{buttonText}<BsArrowReturnRight /></button></Link></div>
+                                className="btn bg-[#F1615A] text-white hover:bg-slate-800 hover:text-white items-center normal-case">{buttonText}<BsArrowReturnRight /></button></Link></div>
                     </div>
                 </div>
             </div>

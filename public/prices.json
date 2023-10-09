@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Standard Retreat Package",
+        "duration": "5 days/4 nights",
+        "accommodation": "Shared room",
+        "yogaSessions": "Daily yoga and meditation sessions",
+        "meals": "Balanced vegetarian meals",
+        "activities": "Guided nature hikes",
+        "workshops": "Access to wellness workshops",
+        "price": "$699 per person"
+    },
+    {
+        "id": 2,
+        "name": "Premium Retreat Package",
+        "duration": "7 days/6 nights",
+        "accommodation": "Private villa",
+        "yogaSessions": "Daily yoga and meditation sessions",
+        "meals": "Gourmet organic meals",
+        "activities": "Personalized fitness training",
+        "workshops": "Spa treatments",
+        "price": "$1,199 per person"
+    },
+    {
+        "id": 3,
+        "name": "Weekend Retreat",
+        "duration": "2 days/1 night (Friday to Sunday)",
+        "accommodation": "Cozy cabin",
+        "yogaSessions": "Weekend yoga and meditation sessions",
+        "meals": "Healthy weekend meals",
+        "activities": "Outdoor yoga by the lake",
+        "workshops": "N/A",
+        "price": "$299 per person"
+    },
+    {
+        "id": 4,
+        "name": "Family and Group Packages",
+        "duration": "Customizable",
+        "accommodation": "Multiple rooms and villas",
+        "yogaSessions": "Tailored yoga and fitness sessions for families or groups",
+        "meals": "Customized meal plans",
+        "activities": "Group activities and team-building exercises",
+        "workshops": "N/A",
+        "price": "Contact us for a personalized quote based on your group size and preferences"
+    },
+    {
+        "id": 5,
+        "name": "Couples Package",
+        "duration": "4 days/3 nights",
+        "accommodation": "Romantic couple's suite",
+        "yogaSessions": "Partner yoga and meditation sessions",
+        "meals": "Romantic candlelit dinners",
+        "activities": "Couples massage and spa treatments",
+        "workshops": "N/A",
+        "price": "$999 per couple"
+    },
+    {
+        "id": 6,
+        "name": "Wellness Warrior Package",
+        "duration": "14 days/13 nights",
+        "accommodation": "Luxury wellness retreat villa",
+        "yogaSessions": "Intensive daily yoga and meditation sessions",
+        "meals": "Detoxifying organic meals",
+        "activities": "Personal fitness coaching and nutrition planning",
+        "workshops": "Holistic wellness consultations",
+        "price": "$2,499 per person"
+    }
+]

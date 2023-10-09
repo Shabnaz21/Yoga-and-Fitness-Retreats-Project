@@ -53,7 +53,7 @@ const Login = () => {
                         </div>
                         <a href="/" className="text-xs text-gray-600 hover:underline hover:text-blue-600">Forget Password?</a>
                         <div>
-                            <button className="btn btn-block">Login</button>
+                            <button className="btn btn-block hover:bg-slate-800 hover:text-white">Login</button>
                         </div>
                     </form>
                     <span>{`Haven't an account?`}
