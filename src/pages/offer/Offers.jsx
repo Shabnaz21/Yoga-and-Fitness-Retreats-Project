@@ -7,11 +7,11 @@ const Offers = () => {
         <section className="space-y-3">
             {/* why  */}
             <div>
-                <div className="hero p-10 bg-[#FBF7F4]">
+                <div className="hero lg:p-10 bg-[#FBF7F4]">
                     <div className="hero-content flex-col lg:flex-row">
                         <img src="https://i.ibb.co/KDvMvwB/pexels-photo-3822720.jpg" className="max-w-sm 
                         rounded-lg shadow-2xl" />
-                        <div className="ml-10 space-y-8 text-lg">
+                        <div className="lg:ml-10 space-y-8 text-lg">
                             <h1 className="text-4xl font-bold text-center">Why Choose the Exclusive Offer?</h1>
                             <p>Highlight the benefits of choosing this exclusive offer, such as:</p>
                             <ul className="space-y-3">

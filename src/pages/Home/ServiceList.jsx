@@ -9,7 +9,7 @@ const ServiceList = () => {
         .then(data=>setServices(data))
     },[])
     return (
-        <div className="pt-10 text-center space-y-3">
+        <div className="pt-10 text-center space-y-3 mx-3">
             <h2 className="text-3xl font-bold">Find What Moves You</h2>
             <p className="text-lg pb-5">Explore this holistic retreat experience and discover the path to a healthier, more balanced life.</p>
             <div className="container mx-auto">

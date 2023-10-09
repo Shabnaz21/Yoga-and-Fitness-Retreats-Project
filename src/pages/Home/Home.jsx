@@ -6,7 +6,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             {/* What Keeps Pushing Us */}
-            <div className='text-center bg-[#FBF7F4] pt-10 '>
+            <div className='text-center bg-[#FBF7F4] pt-10 px-3'>
                 <div className='space-y-3'>
                     <p className='text-lg uppercase font-semibold'>What Keeps Pushing Us</p>
                     <h3 className='text-3xl font-bold'>Modern Yoga for Modern Life</h3>
@@ -26,8 +26,8 @@ const Home = () => {
                 <div className="hero min-h-screen bg-[#FBF7F4]">
                     <div className="hero-content flex-col lg:flex-row">
                         <img src="https://i.ibb.co/KDvMvwB/pexels-photo-3822720.jpg" className="max-w-sm rounded-lg shadow-2xl" />
-                        <div className="ml-10 space-y-8"> 
-                            <h1 className="text-5xl font-bold text-center">Why You Should Choose Us?</h1>
+                        <div className="lg:ml-10 space-y-8"> 
+                            <h1 className="text-5xl font-bold pt-10 text-center">Why You Should Choose Us?</h1>
                             <ul>
                                 <li><span className="font-bold">Expert Instructors:</span>  Our certified team provides personalized guidance tailored to your wellness journey.</li>
                                 <li><span className="font-bold">Serene Locations:</span>  Experience rejuvenation in tranquil settings, from pristine beaches to lush mountains.</li>
