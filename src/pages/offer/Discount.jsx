@@ -5,7 +5,7 @@ const Discount = () => {
     const [discount, setDiscount] = useState([]);
 
     useEffect(() => {
-        fetch('/public/offers.json')
+        fetch('/offers.json')
             .then(response => response.json())
             .then(data => setDiscount(data))
     }, [])
@@ -17,7 +17,7 @@ const Discount = () => {
                 <div className="grid container mx-auto lg:grid-cols-3 md:grid-cols-2 gap-6 pb-20">
                     {
                         discount.map(item => <DiscountCard key={item.id}
-                        discount={item}
+                            discount={item}
                         >
                         </DiscountCard>)
                     }

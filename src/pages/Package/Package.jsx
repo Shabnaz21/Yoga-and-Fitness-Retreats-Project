@@ -5,7 +5,7 @@ const Package = () => {
     const [packages, setPackages] = useState([]);
 
     useEffect(() => {
-        fetch('/public/prices.json')
+        fetch('/prices.json')
             .then(response => response.json())
             .then(data => setPackages(data))
     }, [])

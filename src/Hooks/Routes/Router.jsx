@@ -30,7 +30,7 @@ const routes = createBrowserRouter([
                 element: <PrivateRoutes>
                     <ServicesDetails></ServicesDetails>
                 </PrivateRoutes>,
-                loader:()=>fetch('/public/services.json')
+                loader:()=>fetch('/services.json')
             },
             {
                 path: '/packages',
