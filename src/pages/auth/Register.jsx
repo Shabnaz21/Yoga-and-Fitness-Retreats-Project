@@ -8,7 +8,6 @@ const Register = () => {
     const { createUser, handleGoogleSignIn, handleGithubSignIn } = useContext(AuthContext);
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
-
     const handleRegister = event => { 
         event.preventDefault();
         const form = new FormData(event.currentTarget);
@@ -60,7 +59,7 @@ const Register = () => {
                             <label className="label">
                                 <span className="text-base label-text">Email</span>
                             </label>
-                            <input type="text" name='email' placeholder="Email Address" className="w-full input input-bordered" required/>
+                            <input type="text" name='email' placeholder="Email Address" className="w-full input input-bordered" required />
                         </div>
                         <div>
                             <label className="label">

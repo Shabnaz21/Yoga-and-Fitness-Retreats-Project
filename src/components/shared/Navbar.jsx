@@ -43,7 +43,7 @@ const Navbar = () => {
                         <>
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img width={50} height={50}  src={user.photoURL} alt={user.displayName} />
+                                    <img width={50} height={50} src='https://cdn-icons-png.flaticon.com/512/666/666201.png' alt={user.displayName} />
                                 </div>
                             </label>
                             <span className="text-gray-700">{user.displayName}</span>
