@@ -4,7 +4,7 @@ import { AuthContext } from "../../Hooks/AuthProvide/AuthProvider";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
-
+    
     const handleSignOut = () => {
         logOut()
             .then()
@@ -41,12 +41,15 @@ const Navbar = () => {
                 <div className="navbar-end gap-4">
                     {user ? (
                         <>
-                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full">
-                                    <img width={50} height={50} src='https://cdn-icons-png.flaticon.com/512/666/666201.png' alt={user.displayName} />
-                                </div>
-                            </label>
-                            <span className="text-gray-700">{user.displayName}</span>
+                            <div className="flex flex-col">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-10 rounded-full">
+                                            <img width={50} height={50} src={user.photoURL} alt={user.displayName} />
+                                        </div>
+                                    </label>
+                                
+                                <p className="text-gray-700 font-semibold">{user.displayName}</p>
+                            </div>
                             <button onClick={handleSignOut} className="btn bg-[#F1615A] hover:bg-slate-800 hover:text-white text-white normal-case">Sign Out</button>
                         </>
                     ) : (

@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../Hooks/AuthProvide/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
     const { createUser, handleGoogleSignIn, handleGithubSignIn } = useContext(AuthContext);
@@ -19,7 +20,18 @@ const Register = () => {
         // Create User
         createUser(email, password, name, photo)
             .then(result => {
-                console.log(result.user);   
+                console.log(result.user); 
+
+                // update profile
+                updateProfile(result.user, {
+                        displayName: name, photoURL: photo
+                    })
+                        .then(() => {
+                            console.log('profile updated');
+                        }).catch((error) => {
+                            console.log(error.message);
+                        });
+                
             })   
             .catch(error => {
             console.log(error.message);

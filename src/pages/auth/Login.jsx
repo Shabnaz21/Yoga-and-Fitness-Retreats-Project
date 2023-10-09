@@ -1,12 +1,14 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { Link, useLocation, useNavigate} from "react-router-dom";
 import { AuthContext } from "../../Hooks/AuthProvide/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
+    const emailRef = useRef(null);
+    const { signIn, resetPassword } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+
     const handleLogin = event => {
         event.preventDefault();
         const form = new FormData(event.currentTarget);
@@ -23,15 +25,31 @@ const Login = () => {
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
-                console.log(error.message);
-
                 if (error.code === 'auth/invalid-login-credentials') {
-                    toast.error('Please check email & password. Try again!.');
+                    toast.error('Invalid login');
+                    return('error.message');
                 } else {
                     toast.warn('An error occurred. Please try again later.');
+                    return;
                 }
             });
     }
+    const handleForgetPassword = () => {
+        const email = emailRef.current.value;
+        if (!email) {
+            toast.error('Email doesn\'t match')
+            return;
+        }
+        resetPassword(email)
+            .then(() => {
+            toast.warn('please check your email');
+        })
+            .catch((error) => {
+                console.log(error.message);
+            });
+
+    }
+   
     return (
         <>
             <div className="relative flex flex-col items-center justify-center h-screen overflow-hidden">
@@ -42,16 +60,17 @@ const Login = () => {
                             <label className="label">
                                 <span className="text-base label-text">Email</span>
                             </label>
-                            <input type="text" name="email" placeholder="Email Address" className="w-full input input-bordered" />
+                            <input type="text" ref={emailRef}
+                                name="email" placeholder="Email Address" className="w-full input input-bordered" />
                         </div>
                         <div>
-                            <label className="label">
+                            <label className="label"> 
                                 <span className="text-base label-text">Password</span>
                             </label>
                             <input type="password" name="password" placeholder="Enter Password"
                                 className="w-full input input-bordered" />
                         </div>
-                        <a href="/" className="text-xs text-gray-600 hover:underline hover:text-blue-600">Forget Password?</a>
+                        <p onClick={handleForgetPassword} className="text-xs text-gray-600 hover:underline hover:text-blue-600">Forget Password?</p>
                         <div>
                             <button className="btn btn-block hover:bg-slate-800 hover:text-white">Login</button>
                         </div>

@@ -1,7 +1,15 @@
-import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import {
+    GithubAuthProvider, GoogleAuthProvider,
+    createUserWithEmailAndPassword, getAuth, onAuthStateChanged,
+    sendPasswordResetEmail,
+    signInWithEmailAndPassword, signInWithPopup, signOut, 
+}
+    from "firebase/auth";
+
 import { createContext, useEffect, useState } from "react";
 import app from "../Firebase/firebase.config";
 import PropTypes from 'prop-types';
+
 
 export const AuthContext = createContext(null);
 const auth = getAuth(app)
@@ -11,7 +19,7 @@ const githubProvider = new GithubAuthProvider();
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
-
+// Google
     const handleGoogleSignIn = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
@@ -22,7 +30,7 @@ const AuthProvider = ({ children }) => {
                 console.log(error.message);
             })
     }
-
+// gitHub
     const handleGithubSignIn = () => {
         signInWithPopup(auth, githubProvider)
             .then(result => {
@@ -45,9 +53,15 @@ const AuthProvider = ({ children }) => {
     const logOut = () => {
         return signOut(auth);
     }
+
+    // restpass
+    const resetPassword = (email) => {
+        setLoading(true);
+        return sendPasswordResetEmail(auth, email)
+    }
+    
     useEffect(() => {
         const outsider = onAuthStateChanged(auth, currentUser => {
-            console.log('user in the auth state changed', currentUser);
             setUser(currentUser);
             setLoading(false);
         });
@@ -60,6 +74,7 @@ const AuthProvider = ({ children }) => {
         user,
         createUser, 
         loading,
+        resetPassword,
         signIn,
         handleGoogleSignIn,
         handleGithubSignIn,
