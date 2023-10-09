@@ -10,12 +10,14 @@ const githubProvider = new GithubAuthProvider();
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     const handleGoogleSignIn = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const loggedInUser = result.user;
                 setUser(loggedInUser)
+                setLoading(true);
             }).catch(error => {
                 console.log(error.message);
             })
@@ -26,14 +28,17 @@ const AuthProvider = ({ children }) => {
             .then(result => {
                 const loggedUser = result.user;
                 setUser(loggedUser);
+                setLoading(true);
             })
     }
     
     const createUser = (email, password) => {
+        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password)
     }
     // signIn
     const signIn = (email, password) => {
+        setLoading(true);
         return signInWithEmailAndPassword(auth, email, password)
     }
     // logout
@@ -44,6 +49,7 @@ const AuthProvider = ({ children }) => {
         const outsider = onAuthStateChanged(auth, currentUser => {
             console.log('user in the auth state changed', currentUser);
             setUser(currentUser);
+            setLoading(false);
         });
         return () => {
             outsider();
@@ -53,6 +59,7 @@ const AuthProvider = ({ children }) => {
         
         user,
         createUser, 
+        loading,
         signIn,
         handleGoogleSignIn,
         handleGithubSignIn,
