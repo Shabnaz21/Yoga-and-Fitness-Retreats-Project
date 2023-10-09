@@ -8,6 +8,7 @@ import ServicesDetails from "../../pages/ServicesDetails/ServicesDetails";
 import ServiceList from "../../pages/Home/ServiceList";
 import PrivateRoutes from "./PrivateRoutes";
 import Package from "../../pages/Package/Package";
+import Offers from "../../pages/Package/Offers";
 
 
 
@@ -36,6 +37,12 @@ const routes = createBrowserRouter([
                 element: <PrivateRoutes>
                     <Package></Package>
                 </PrivateRoutes>
+            }, {
+                path: '/offers',
+                element: <PrivateRoutes>
+                    <Offers></Offers>
+                </PrivateRoutes>
+                
             },
             {
                 path: '/register',

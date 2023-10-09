@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import Contact from "./Contact";
 import ServiceList from "./ServiceList";
 
 const Home = () => {

@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import Contact from "../Home/Contact";
 
 const ServicesDetails = () => {
     const allService = useLoaderData();
@@ -26,9 +27,8 @@ const ServicesDetails = () => {
                             ))}
                         </ul>
                     </p>
-                    
                 </div>
-                <div className="bg-[#E3F2F1] p-5 mb-20  rounded-xl">
+                <div className="bg-[#E3F2F1] p-5 mb-20 rounded-xl">
                     <div>
                         <h2 className="text-2xl text-center font-bold border-b-2 pb-2 border-[#0000000d]">Short Summaries</h2>
                         <p className="text-lg m-6"> {service.shortDescription} </p>
@@ -50,10 +50,11 @@ const ServicesDetails = () => {
                         </div>
                     </div>
                     <button 
-                        className="btn bg-[#F1615A] p-3 text-white w-full hover:bg-slate-800 hover:text-white
+                        className="btn bg-[#F1615A] p-3 text-lg text-white w-full hover:bg-slate-800 hover:text-white
                         font-semibold rounded-lg">{service.buttonText} </button>
                 </div>
             </div>
+            <Contact></Contact>
         </div>
     );
 };
