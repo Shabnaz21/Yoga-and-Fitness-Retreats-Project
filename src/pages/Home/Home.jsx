@@ -1,23 +1,34 @@
+import { useEffect } from "react";
 import Banner from "./Banner";
 import Accordion from "./FAQ";
 import ServiceList from "./ServiceList";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Home = () => {
+    useEffect(() => {
+        Aos.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+});
+    }, [])
     return (
         <div>
             <Banner></Banner>
             {/* What Keeps Pushing Us */}
-            <div className='text-center bg-[#FBF7F4] pt-10 px-3'>
+            <div data-aos="fade-right" className='text-center bg-[#FBF7F4] pt-10 px-3'>
                 <div className='space-y-3'>
                     <p className='text-lg uppercase font-semibold'>What Keeps Pushing Us</p>
                     <h3 className='text-3xl font-bold'>Modern Yoga for Modern Life</h3>
-                    <div className='lg:mx-64 md:mx-10 text-lg space-y-4'>
+                    <div className='lg:mx-64 md:mx-10 text-lg space-y-4 pb-5'>
                         <p>Our approach to yoga combines a diverse range of techniques, including asanas (postures) and meditation, inspired by the rich philosophies, teachings, and practices of the Yoga school. We understand that modern life often demands more than just traditional practices. Whether you seek physical fitness, mental clarity, or a spiritual journey, our offerings cater to a diverse range of needs.</p>
                         <p>Join us in the pursuit of a clear mind and a healthier body, and discover the transformative power of yoga and fitness in the modern world.</p>
                     </div>
                 </div>
                 <div>
-                    <img className='mx-auto p-8 w-auto' src="https://i.ibb.co/cQS5Z5t/mt-2251-home-img2.png" alt="" />
+                    <img className='mx-auto p-8 w-auto hidden md:block' src="https://i.ibb.co/cQS5Z5t/mt-2251-home-img2.png" alt="" />
                 </div>
             </div>
             {/* service */}
@@ -41,7 +52,10 @@ const Home = () => {
                 </div>
             </div>
             {/* FAQ */}
-            <Accordion></Accordion>
+            <div data-aos="zoom-in">
+                <Accordion></Accordion>
+            </div>
+            
         </div>
     );
 };

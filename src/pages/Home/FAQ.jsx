@@ -10,10 +10,10 @@ const Accordion = () => {
                             <span className="mb-2 block text-lg font-semibold text-[#F1615A]">
                                 FAQ
                             </span>
-                            <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
+                            <h2 className="mb-4 text-3xl px-3 font-bold text-dark sm:text-4xl md:text-[40px]">
                                 Any Questions? Look Here
                             </h2>
-                            <p className="text-base text-body-color">
+                            <p className="text-base px-3 text-body-color">
                                 Explore this section to find information on package details, customization options, suitability for different levels, and more.
                             </p>
                         </div>
