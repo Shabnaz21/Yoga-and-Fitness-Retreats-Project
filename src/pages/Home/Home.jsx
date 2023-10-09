@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import Accordion from "./FAQ";
 import ServiceList from "./ServiceList";
 
 const Home = () => {
@@ -39,6 +40,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* FAQ */}
+            <Accordion></Accordion>
         </div>
     );
 };
