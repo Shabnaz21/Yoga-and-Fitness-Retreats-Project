@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i> `greetign` declares an empty object. When i console.log(greeting); It will print an empty object.</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>JavaScript can Number convert to String. Here, first it convert 1 in string, then she/he sum it. The result gives string of 12</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>It's simple. Firstly I dealer a food variable, then try to change 1st element. We know that js each variable or property holds its own reference to a value. It changing one does not affect the others. so, it's gives own value. </i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Here call sayHi without passing any arguments of the 'name' parameter inside the function. So, 'name' value is undefined! </i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>We know that `forEach()` method is an iterative method. Here we see that, if(num) condition check each nums of element value return truly. When first check in 1st element , it's give falsy value. Then code is running, he/she gives truthy value. He store it in count variable. Again checking work running. when he checked all elements then exist it and give result total number of truly value. </i>
 
 </p>
 </details>
