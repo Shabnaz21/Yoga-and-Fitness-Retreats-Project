@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Yoga Bliss Retreat",
         "image": "https://i.ibb.co/qrRNw3k/bamboo-yoga-play-studio-dominical-costa-rica.jpg",
         "price": "1200",
@@ -20,7 +19,6 @@
         "buttonText": "Experience Bliss"
     },
     {
-        "id": 2,
         "name": "Fitness Adventure Boot Camp",
         "image": "https://i.ibb.co/WgJ1WXg/boot-camps-surrey-guildford-godalming.jpg",
         "price": "1500",
@@ -40,7 +38,6 @@
         "buttonText": "Start Your Adventure"
     },
     {
-        "id": 3,
         "name": "Meditation Haven",
         "image": "https://i.ibb.co/L5PdYSq/image-from-rawpixel-id-1201640-jpeg-1080x675.jpg",
         "price": "1100",
@@ -60,7 +57,6 @@
         "buttonText": "Explore Now"
     },
     {
-        "id": 4,
         "name": "Holistic Nutrition Workshop",
         "image": "https://i.ibb.co/nbRwJT6/corporate-nutrition-workshops-melbourne-630.jpg",
         "price": "300",
@@ -80,7 +76,6 @@
         "buttonText": "Book Now"
     },
     {
-        "id": 5,
         "name": "Nature Immersion Experience",
         "image": "https://i.ibb.co/HhSTmsc/Yoga-3-900-x-600.jpg",
         "price": "1400",
@@ -100,7 +95,6 @@
         "buttonText": "Get Started"
     },
     {
-        "id": 6,
         "name": "Well-being Seminars",
         "image": "https://i.ibb.co/6HXfPgt/27503306-10154952313756862-1504000091080463655-o.jpg",
         "price": "250",
@@ -120,7 +114,6 @@
         "buttonText": "Embrace Wellness"
     },
     {
-        "id": 7,
         "name": "Couples Reconnect Retreat",
         "image": "https://i.ibb.co/QfNq8JV/couple-yoga-jpg.webp",
         "price": "1600",
@@ -140,7 +133,6 @@
         "buttonText": "Rekindle Love"
     },
     {
-        "id": 8,
         "name": "Sound Healing Sessions",
         "image": "https://i.ibb.co/gV1L2tb/IMG-2514-scaled.jpg",
         "price": "400",
@@ -160,7 +152,6 @@
         "buttonText":"Join the Journey"
     },
     {
-        "id": 9,
         "name": "Detox and Revitalize",
         "image": "https://i.ibb.co/Z67GghH/5-regional-wellness-retreats.jpg",
         "price": "1300",

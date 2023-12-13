@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import DiscountCard from "./DiscountCard";
+import useAxios from "../../Dashboard/User/useAxios";
 
 const Discount = () => {
     const [discount, setDiscount] = useState([]);
-
+    const axios = useAxios()
     useEffect(() => {
-        fetch('/offers.json')
-            .then(response => response.json())
-            .then(data => setDiscount(data))
-    }, [])
+        axios.get('/offers')
+            .then(res => {
+                setDiscount(res?.data);
+            })
+    }, [axios])
     return (
         <div>
             <div className="text-center space-y-5 mt-10">

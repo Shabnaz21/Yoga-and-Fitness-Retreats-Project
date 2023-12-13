@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Standard Retreat Package",
         "duration": "5 days/4 nights",
         "accommodation": "Shared room",
@@ -11,7 +10,6 @@
         "price": "$699 per person"
     },
     {
-        "id": 2,
         "name": "Premium Retreat Package",
         "duration": "7 days/6 nights",
         "accommodation": "Private villa",
@@ -22,7 +20,6 @@
         "price": "$1,199 per person"
     },
     {
-        "id": 3,
         "name": "Weekend Retreat",
         "duration": "2 days/1 night (Friday to Sunday)",
         "accommodation": "Cozy cabin",
@@ -33,7 +30,6 @@
         "price": "$299 per person"
     },
     {
-        "id": 4,
         "name": "Family and Group Packages",
         "duration": "Customizable",
         "accommodation": "Multiple rooms and villas",
@@ -44,7 +40,6 @@
         "price": "Contact us for a personalized quote based on your group size and preferences"
     },
     {
-        "id": 5,
         "name": "Couples Package",
         "duration": "4 days/3 nights",
         "accommodation": "Romantic couple's suite",
@@ -55,7 +50,6 @@
         "price": "$999 per couple"
     },
     {
-        "id": 6,
         "name": "Wellness Warrior Package",
         "duration": "14 days/13 nights",
         "accommodation": "Luxury wellness retreat villa",

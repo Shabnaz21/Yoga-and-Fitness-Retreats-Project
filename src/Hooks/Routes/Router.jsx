@@ -34,7 +34,7 @@ const routes = createBrowserRouter([
                 element: <PrivateRoutes>
                     <ServicesDetails></ServicesDetails>
                 </PrivateRoutes>,
-                loader:()=>fetch('/services.json')
+                loader: () => fetch('http://localhost:5000/services')
             },
             {
                 path: '/packages',

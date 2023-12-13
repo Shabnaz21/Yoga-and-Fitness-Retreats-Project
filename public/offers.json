@@ -1,6 +1,5 @@
 [
     {
-        "ID": 1,
         "Offer_Title": "Limited-Time Offer: 20% Off Premium Retreat Package!",
         "Offer_Description": "Exclusive discount for our Premium Retreat Package. Enjoy a 20% discount on your stay and experience the ultimate luxury and relaxation.",
         "Value_Emphasized": "Experience luxury at a fraction of the price.",
@@ -9,7 +8,6 @@
         "Call_to_Action": "Claim Offer"
     },
     {
-        "ID": 2,
         "Offer_Title": "Exclusive Weekend Retreat Package - Save 15% on Your 3-Day Getaway!",
         "Offer_Description": "Book our Weekend Retreat Package now and save 15% on your 3-day wellness escape. Limited availability, don't miss out!",
         "Value_Emphasized": "Escape the hustle and bustle while saving on your getaway.",
@@ -18,7 +16,6 @@
         "Call_to_Action": "Book Now"
     },
     {
-        "ID": 3,
         "Offer_Title": "Detox and Rejuvenate: 10% Off Specialized Retreat",
         "Offer_Description": "Embark on a transformation journey with our Detox and Rejuvenate Retreat. Save 10% on this wellness experience and revitalize your body and mind.",
         "Value_Emphasized": "Cleanse, refresh, and renew your well-being.",
@@ -27,7 +24,6 @@
         "Call_to_Action": "Book Now"
     },
     {
-        "ID": 4,
         "Offer_Title": "Family and Friends Retreat - Group Discount",
         "Offer_Description": "Planning a group retreat with family or friends? Enjoy special group discounts on accommodations and activities. Contact us for details!",
         "Value_Emphasized": "Create unforgettable memories together and save.",
@@ -36,7 +32,6 @@
         "Call_to_Action": "Contact Us"
     },
     {
-        "ID": 5,
         "Offer_Title": "New Year, New You: 25% Off Premium Retreat Package!",
         "Offer_Description": "Start the new year with a bang! Book our Premium Retreat Package for January and enjoy an exclusive 25% discount on an enriching experience.",
         "Value_Emphasized": "Kickstart your year with wellness and savings.",
@@ -45,7 +40,6 @@
         "Call_to_Action": "Claim Offer"
     },
     {
-        "ID": 6,
         "Offer_Title": "Wellness Retreat for Couples - 15% Off!",
         "Offer_Description": "Reconnect with your partner and rejuvenate together. Book our Couples' Wellness Retreat and enjoy a special 15% discount on a romantic and wellness-filled getaway.",
         "Value_Emphasized": "Rediscover love, wellness, and each other.",

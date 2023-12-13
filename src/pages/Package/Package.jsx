@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import PackageCard from "./Packagecard";
+import useAxios from "../../Dashboard/User/useAxios";
 
 const Package = () => {
     const [packages, setPackages] = useState([]);
+    const axios = useAxios();
 
     useEffect(() => {
-        fetch('/prices.json')
-            .then(response => response.json())
-            .then(data => setPackages(data))
-    }, [])
+        axios('/packages')
+            .then(response =>
+                setPackages(response?.data))
+    }, [axios])
 
     return (
         <div className="pt-10 space-y-3 mx-5">
@@ -18,7 +20,7 @@ const Package = () => {
             </div>
             <div className="grid container mx-auto lg:grid-cols-3 md:grid-cols-2 gap-6 pb-20">
                 {
-                    packages.map(item=><PackageCard key={item.id} packPrice={item}></PackageCard>)
+                    packages.map(item=><PackageCard key={item._id} packPrice={item}></PackageCard>)
                 }
         </div>
         </div>
