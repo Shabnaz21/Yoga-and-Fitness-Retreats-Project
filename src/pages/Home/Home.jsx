@@ -18,9 +18,9 @@ const Home = () => {
         <div>
             <Banner></Banner>
             {/* What Keeps Pushing Us */}
-            <div data-aos="fade-right" className='text-center bg-[#FBF7F4] pt-10 px-3'>
+            <div data-aos="fade-right" className='text-center light:bg-[#FBF7F4] pt-10 px-3'>
                 <div className='space-y-3'>
-                    <p className='text-lg uppercase font-semibold'>What Keeps Pushing Us</p>
+                    <p className='text-lg uppercase dark:text-black font-semibold'>What Keeps Pushing Us</p>
                     <h3 className='text-3xl font-bold'>Modern Yoga for Modern Life</h3>
                     <div className='lg:mx-64 md:mx-10 text-lg space-y-4 pb-5'>
                         <p>Our approach to yoga combines a diverse range of techniques, including asanas (postures) and meditation, inspired by the rich philosophies, teachings, and practices of the Yoga school. We understand that modern life often demands more than just traditional practices. Whether you seek physical fitness, mental clarity, or a spiritual journey, our offerings cater to a diverse range of needs.</p>

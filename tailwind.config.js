@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
     extend: {
       fontFamily: {
         Montserrat: "'Montserrat', sans- serif"
@@ -12,5 +13,8 @@ export default {
     },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light", "night"],
+  },
 }
 

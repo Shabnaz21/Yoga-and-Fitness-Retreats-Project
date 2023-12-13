@@ -9,6 +9,10 @@ import ServiceList from "../../pages/Home/ServiceList";
 import PrivateRoutes from "./PrivateRoutes";
 import Package from "../../pages/Package/Package";
 import Offers from "../../pages/offer/Offers";
+import DashboardLayout from "../../Dashboard/Layout/DashboardLayout";
+import Dashboard from "../../Dashboard/Dashboard";
+import UserProfile from "../../Dashboard/User/UserProfile";
+import Wishlist from "../../Dashboard/User/wishlist";
 
 
 
@@ -50,6 +54,26 @@ const routes = createBrowserRouter([
             }, {
                 path: '/login',
                 element:<Login></Login>
+            }
+        ]
+    },
+    {
+        path: 'dashboard',
+        element: <PrivateRoutes>
+            <DashboardLayout></DashboardLayout>
+        </PrivateRoutes>,
+        children: [
+            {
+                index: true,
+                element: <Dashboard></Dashboard>
+            },
+            {
+                path: 'user-profile',
+                element: <UserProfile></UserProfile>
+            },
+            {
+                path: 'wishlist',
+                element: <Wishlist></Wishlist>
             }
         ]
     }

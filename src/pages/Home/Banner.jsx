@@ -16,7 +16,6 @@ const Banner = () => {
         <div>
             <div className="hero min-h-screen " style={{ backgroundImage: 'url(https://i.ibb.co/rsNKmCL/Adobe-Stock-313431040.jpg)' }}>
                 <div className="hero-overlay bg-opacity-95 bg-[#745982]"></div>
-
                 <div className="text-center text-neutral-content">
                     <div className='mt-20'>
                         <h1 className="mb-5 text-5xl font-bold">Elevate Your Spirit, Energize Your Body</h1>
