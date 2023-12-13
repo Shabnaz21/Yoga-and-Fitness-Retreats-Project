@@ -24,17 +24,17 @@ const routes = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element:<Home></Home>,
+                element: <Home></Home>,
             }, {
                 path: '/services',
-                element:<ServiceList></ServiceList>
+                element: <ServiceList></ServiceList>
             },
             {
                 path: '/services/:id',
                 element: <PrivateRoutes>
                     <ServicesDetails></ServicesDetails>
                 </PrivateRoutes>,
-                loader: () => fetch('http://localhost:5000/services')
+                loader: () => fetch('https://yoga-and-fitness-retreats-server.vercel.app/services')
             },
             {
                 path: '/packages',
@@ -46,14 +46,14 @@ const routes = createBrowserRouter([
                 element: <PrivateRoutes>
                     <Offers></Offers>
                 </PrivateRoutes>
-                
+
             },
             {
                 path: '/register',
-                element:<Register></Register>
+                element: <Register></Register>
             }, {
                 path: '/login',
-                element:<Login></Login>
+                element: <Login></Login>
             }
         ]
     },
